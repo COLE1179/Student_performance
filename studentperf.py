@@ -6,7 +6,7 @@ from sklearn.model_selection import train_test_split
 st.header('Students Performance App Created By Cole')
 st.subheader('Linear Regression Project')
 
-dg = pd.read_csv(r"C:\Users\HP\Documents\NEW COLE\student-mat.csv", delimiter=';')
+dg = pd.read_csv("student-mat.csv", delimiter=';')
 st.dataframe(dg)
 
 df = dg[['school', 'sex', 'Walc', 'absences', 'failures']].dropna()
